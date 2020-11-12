@@ -7,6 +7,6 @@ router.get('/', (req, res) => {
     res.json({users: 'users ok'});
 })
 
-router.get('/123', usersController.testUsers)
+router.post('/signup', usersController.signupUSer)
 
 module.exports = router;
